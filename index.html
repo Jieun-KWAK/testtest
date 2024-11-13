@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Border Example</title>
+  <style>
+    /* 기본 스타일 설정 */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    /* 모바일 화면 (768px 이하) */
+    @media (max-width: 768px) {
+      .box {
+        border-bottom: 4px solid blue; /* 모바일에서 파란색 하단 border */
+        color: blue;
+      }
+    }
+
+    /* 웹 화면 (769px 이상) */
+    @media (min-width: 769px) {
+      .box {
+        border-bottom: 4px solid green; /* 웹에서 초록색 하단 border */
+        color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    This is a responsive box!
+  </div>
+</body>
+</html>
